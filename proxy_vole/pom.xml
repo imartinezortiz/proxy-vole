@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.btr</groupId>
+	<artifactId>proxy-vole</artifactId>
+	<version>0.1-SNAPHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Proxy Vole</name>
+	<description>A Java library to auto detect the platform network proxy settings. The library provides some proxy setting search strategies to read the proxy settings from the system config (Windows, KDE, Gnome, OSX), browser config (Firefox, IE), or environment variables, ... and provides you an ready to use proxy selector.</description>
+	<url>https://code.google.com/p/proxy-vole/</url>
+
+	<licenses>
+		<license>
+			<name>New BSD License</name>
+			<url>http://www.opensource.org/licenses/bsd-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>rosstauscher</id>
+			<name>rosstauscher</name>
+			<email>rosstauscher@googlemail.com</email>
+		</developer>
+	</developers>
+
+	<scm>
+		<url>https://code.google.com/p/proxy-vole/</url>
+		<connection>scm:svn:https://code.google.com/p/proxy-vole/svn</connection>
+		<developerConnection>scm:sv:https://code.google.com/p/proxy-vole/svn/</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<source.version>1.5</source.version>
+		<target.version>1.5</target.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.mozilla</groupId>
+			<artifactId>rhino</artifactId>
+			<version>1.7R4</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>${source.version}</source>
+					<target>${target.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
