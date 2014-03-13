@@ -10,7 +10,7 @@
 
 	<groupId>com.btr</groupId>
 	<artifactId>proxy-vole</artifactId>
-	<version>0.1-SNAPHOT</version>
+	<version>0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Proxy Vole</name>
