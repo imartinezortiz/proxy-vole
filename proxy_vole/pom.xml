@@ -8,7 +8,7 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.btr</groupId>
+	<groupId>es.e-ucm.com.btr</groupId>
 	<artifactId>proxy-vole</artifactId>
 	<version>0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
